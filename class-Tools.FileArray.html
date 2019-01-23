@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Tools\FileArray | php-tools</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active main">
+					<a href="namespace-Tools.html">
+						Tools<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-Tools.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-Tools.TestSuite.html">
+						TestSuite					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Tools.Apache.html" class="deprecated">Apache</a></li>
+				<li><a href="class-Tools.BodyParser.html">BodyParser</a></li>
+				<li class="active"><a href="class-Tools.FileArray.html">FileArray</a></li>
+			</ul>
+
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-Tools.ReflectionTrait.html">ReflectionTrait</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Tools.html" title="Summary of Tools"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class FileArray</h1>
+
+
+	<div class="description">
+	<p>This class allows you to read and write arrays using text files</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Tools.html">Tools</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Tools.FileArray.html#16-169" title="Go to source code">FileArray.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Tools.FileArray.html#31-50" title="Go to source code">__construct</a>( <span>string <var>$filename</var></span>, <span>array <var>$data</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Construct.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Construct.</p>
+
+<p>If you want to create a file and you have an already prepared array, instead of reading data from an existing file, you can use the <code>$data</code> parameter.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd>Filename</dd>
+					<dt><var>$data</var></dt>
+					<dd>Optional initial data</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					NotWritableException
+				</div>
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-Tools.FileArray.html#_read">Tools\FileArray::read()</a></code><br>
+						<br>
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="append" id="_append">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_append">#</a>
+		<code><a href="source-class-Tools.FileArray.html#52-63" title="Go to source code">append</a>( <span>mixed <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Appends data to existing data</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Appends data to existing data</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd>Data</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Tools.FileArray.html#65-81" title="Go to source code">delete</a>( <span>integer <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Deletes a value from its key number.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Deletes a value from its key number.</p>
+
+<p>Note that the keys will be re-ordered.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd>Key number</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					KeyNotExistsException
+				</div>
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exists" id="_exists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exists">#</a>
+		<code><a href="source-class-Tools.FileArray.html#83-92" title="Go to source code">exists</a>( <span>integer <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Checks if a key number exists</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Checks if a key number exists</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd>Key number</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Tools.FileArray.html#94-106" title="Go to source code">get</a>( <span>integer <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Gets a value from its key number</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets a value from its key number</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd>Key number</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					KeyNotExistsException
+				</div>
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepend" id="_prepend">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepend">#</a>
+		<code><a href="source-class-Tools.FileArray.html#108-119" title="Go to source code">prepend</a>( <span>mixed <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Prepends data to existing data</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Prepends data to existing data</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd>Data</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="read" id="_read">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_read">#</a>
+		<code><a href="source-class-Tools.FileArray.html#121-140" title="Go to source code">read</a>( )</code>
+
+		<div class="description short">
+			<p>Reads data.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Reads data.</p>
+
+<p>The first time, the file content is read. The next time the property value will be returned.</p>
+
+<p>If there are no data or if the file does not exist, it still returns an empty array.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+						<br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						Tools\FileArray::__construct()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="take" id="_take">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_take">#</a>
+		<code><a href="source-class-Tools.FileArray.html#142-157" title="Go to source code">take</a>( <span>integer <var>$size</var></span>, <span>integer <var>$from</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Extract a slice of data, with maximum <code>$size</code> values.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Extract a slice of data, with maximum <code>$size</code> values.</p>
+
+<p>If a second parameter is passed, it will determine from what position to start taking values.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$size</var></dt>
+					<dd>Maximun number of values</dd>
+					<dt><var>$from</var></dt>
+					<dd>What position to start taking values</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write" id="_write">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write">#</a>
+		<code><a href="source-class-Tools.FileArray.html#159-168" title="Go to source code">write</a>( )</code>
+
+		<div class="description short">
+			<p>Writes data to the file</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Writes data to the file</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="data" id="$data">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.FileArray.html#21-24" title="Go to source code"><var>$data</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\FileArray::__construct()<br>
+							Tools\FileArray::append()<br>
+							Tools\FileArray::delete()<br>
+							Tools\FileArray::exists()<br>
+							Tools\FileArray::get()<br>
+							Tools\FileArray::prepend()<br>
+							Tools\FileArray::read()<br>
+							Tools\FileArray::take()<br>
+							Tools\FileArray::write()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$data" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="filename" id="$filename">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.FileArray.html#26-29" title="Go to source code"><var>$filename</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\FileArray::__construct()<br>
+							Tools\FileArray::read()<br>
+							Tools\FileArray::write()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$filename" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-tools API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

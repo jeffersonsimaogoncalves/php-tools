@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Tools\BodyParser | php-tools</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active main">
+					<a href="namespace-Tools.html">
+						Tools<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-Tools.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-Tools.TestSuite.html">
+						TestSuite					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Tools.Apache.html" class="deprecated">Apache</a></li>
+				<li class="active"><a href="class-Tools.BodyParser.html">BodyParser</a></li>
+				<li><a href="class-Tools.FileArray.html">FileArray</a></li>
+			</ul>
+
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-Tools.ReflectionTrait.html">ReflectionTrait</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Tools.html" title="Summary of Tools"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class BodyParser</h1>
+
+
+	<div class="description">
+	<p>A body parser.</p>
+
+<p>It can tell if a body contains HTML code and can extract links from body.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Tools.html">Tools</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Tools.BodyParser.html#19-170" title="Go to source code">BodyParser.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Tools.BodyParser.html#78-93" title="Go to source code">__construct</a>( <span>string|Psr\Http\Message\StreamInterface <var>$body</var></span>, <span>string <var>$url</var></span> )</code>
+
+		<div class="description short">
+			<p>Constructor</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructor</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$body</var></dt>
+					<dd>Body as string or <code>StreamInterface</code></dd>
+					<dt><var>$url</var></dt>
+					<dd>Reference url. Used to determine the relative links</dd>
+				</dl></div>
+
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+						<br>
+						<br>
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_turnUrlAsAbsolute" id="__turnUrlAsAbsolute">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__turnUrlAsAbsolute">#</a>
+		<code><a href="source-class-Tools.BodyParser.html#95-120" title="Go to source code">_turnUrlAsAbsolute</a>( <span>string <var>$url</var></span> )</code>
+
+		<div class="description short">
+			<p>Internal method to turn an url as absolute</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Internal method to turn an url as absolute</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$url</var></dt>
+					<dd>Relative url</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>Absolute url
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+						<br>
+						<br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						Tools\BodyParser::extractLinks()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="extractLinks" id="_extractLinks">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_extractLinks">#</a>
+		<code><a href="source-class-Tools.BodyParser.html#122-159" title="Go to source code">extractLinks</a>( )</code>
+
+		<div class="description short">
+			<p>Extracs links from body</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Extracs links from body</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-Tools.BodyParser.html#__turnUrlAsAbsolute">Tools\BodyParser::_turnUrlAsAbsolute()</a></code><br>
+						<br>
+						<br>
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isHtml" id="_isHtml">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isHtml">#</a>
+		<code><a href="source-class-Tools.BodyParser.html#161-169" title="Go to source code">isHtml</a>( )</code>
+
+		<div class="description short">
+			<p>Checks if the body contains HTML code</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Checks if the body contains HTML code</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="body" id="$body">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.BodyParser.html#26-30" title="Go to source code"><var>$body</var></a>
+
+			<div class="description short">
+				<p>Body</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Body</p>
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\BodyParser::__construct()<br>
+							Tools\BodyParser::extractLinks()<br>
+							Tools\BodyParser::isHtml()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$body" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="extractedLinks" id="$extractedLinks">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.BodyParser.html#32-37" title="Go to source code"><var>$extractedLinks</var></a>
+
+			<div class="description short">
+				<p>Extracted links. This property works as a cache of values. A <code>null</code> value
+ indicates that the links have not yet been extracted</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Extracted links. This property works as a cache of values. A <code>null</code> value indicates that the links have not yet been extracted</p>
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\BodyParser::extractLinks()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$extractedLinks" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="host" id="$host">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.BodyParser.html#39-43" title="Go to source code"><var>$host</var></a>
+
+			<div class="description short">
+				<p>Host of the reference url</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Host of the reference url</p>
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\BodyParser::__construct()<br>
+							Tools\BodyParser::_turnUrlAsAbsolute()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$host" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="scheme" id="$scheme">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.BodyParser.html#45-49" title="Go to source code"><var>$scheme</var></a>
+
+			<div class="description short">
+				<p>Scheme of the reference url</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Scheme of the reference url</p>
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\BodyParser::__construct()<br>
+							Tools\BodyParser::_turnUrlAsAbsolute()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$scheme" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="tags" id="$tags">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.BodyParser.html#51-70" title="Go to source code"><var>$tags</var></a>
+
+			<div class="description short">
+				<p>HTML tags that may contain links and therefore need to be scanned.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>HTML tags that may contain links and therefore need to be scanned.</p>
+
+<p>Array with tag names as keys and attribute names as values.</p>
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\BodyParser::extractLinks()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$tags" class="anchor">#</a>
+				<code>[
+    <span class="php-quote">'a'</span> =&gt; <span class="php-quote">'href'</span>,
+    <span class="php-quote">'area'</span> =&gt; <span class="php-quote">'href'</span>,
+    <span class="php-quote">'audio'</span> =&gt; <span class="php-quote">'src'</span>,
+    <span class="php-quote">'embed'</span> =&gt; <span class="php-quote">'src'</span>,
+    <span class="php-quote">'frame'</span> =&gt; <span class="php-quote">'src'</span>,
+    <span class="php-quote">'iframe'</span> =&gt; <span class="php-quote">'src'</span>,
+    <span class="php-quote">'img'</span> =&gt; <span class="php-quote">'src'</span>,
+    <span class="php-quote">'link'</span> =&gt; <span class="php-quote">'href'</span>,
+    <span class="php-quote">'script'</span> =&gt; <span class="php-quote">'src'</span>,
+    <span class="php-quote">'source'</span> =&gt; <span class="php-quote">'src'</span>,
+    <span class="php-quote">'track'</span> =&gt; <span class="php-quote">'src'</span>,
+    <span class="php-quote">'video'</span> =&gt; <span class="php-quote">'src'</span>,
+]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="url" id="$url">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.BodyParser.html#72-76" title="Go to source code"><var>$url</var></a>
+
+			<div class="description short">
+				<p>Reference url. Used to determine the relative links</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Reference url. Used to determine the relative links</p>
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\BodyParser::__construct()<br>
+							Tools\BodyParser::_turnUrlAsAbsolute()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$url" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-tools API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

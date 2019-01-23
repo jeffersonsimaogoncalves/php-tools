@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Trait Tools\ReflectionTrait | php-tools</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active main">
+					<a href="namespace-Tools.html">
+						Tools<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-Tools.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-Tools.TestSuite.html">
+						TestSuite					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Tools.Apache.html" class="deprecated">Apache</a></li>
+				<li><a href="class-Tools.BodyParser.html">BodyParser</a></li>
+				<li><a href="class-Tools.FileArray.html">FileArray</a></li>
+			</ul>
+
+
+			<h3>Traits</h3>
+			<ul>
+				<li class="active"><a href="class-Tools.ReflectionTrait.html">ReflectionTrait</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Tools.html" title="Summary of Tools"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Trait ReflectionTrait</h1>
+
+
+	<div class="description">
+	<p>A Reflection trait</p>
+	</div>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct Known Users</h4>
+			<a href="class-Tools.TestSuite.TestCase.html">Tools\TestSuite\TestCase</a>
+	</div>
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Tools.html">Tools</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Tools.ReflectionTrait.html#20-124" title="Go to source code">ReflectionTrait.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getMethodInstance" id="_getMethodInstance">
+
+		<td class="attributes"><code>
+			 protected 
+
+			ReflectionMethod
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMethodInstance">#</a>
+		<code><a href="source-class-Tools.ReflectionTrait.html#25-37" title="Go to source code">getMethodInstance</a>( <span>object <var>&amp; $object</var></span>, <span>string <var>$methodName</var></span> )</code>
+
+		<div class="description short">
+			<p>Internal method to get the <code>ReflectionMethod</code> instance</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Internal method to get the <code>ReflectionMethod</code> instance</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$object</var></dt>
+					<dd>Instantiated object that we will run method on</dd>
+					<dt><var>$methodName</var></dt>
+					<dd>Method name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					ReflectionMethod
+				</div>
+
+
+				<h4>Used by</h4>
+				<div class="list">
+						Tools\ReflectionTrait::invokeMethod()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProperties" id="_getProperties">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProperties">#</a>
+		<code><a href="source-class-Tools.ReflectionTrait.html#39-67" title="Go to source code">getProperties</a>( <span>object <var>&amp; $object</var></span>, <span>integer <var>$filter</var> = <span class="php-num">256</span> | <span class="php-num">512</span> | <span class="php-num">1024</span></span> )</code>
+
+		<div class="description short">
+			<p>Gets all properties as array with property names as keys.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets all properties as array with property names as keys.</p>
+
+<p>If the object is a mock, it removes the properties added by PHPUnit.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$object</var></dt>
+					<dd>Object from which to get properties</dd>
+					<dt><var>$filter</var></dt>
+					<dd><p>The optional filter, for filtering desired property
+ types. It's configured using <code>ReflectionProperty</code> constants, and
+ default is public, protected and private properties</p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>Property names as keys and property values as values
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.4<br>
+				</div>
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://php.net/manual/en/class.reflectionproperty.php#reflectionproperty.constants.modifiers">http://php.net/manual/en/class.reflectionproperty.php#reflectionproperty.constants.modifiers</a><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPropertyInstance" id="_getPropertyInstance">
+
+		<td class="attributes"><code>
+			 protected 
+
+			ReflectionProperty
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPropertyInstance">#</a>
+		<code><a href="source-class-Tools.ReflectionTrait.html#69-81" title="Go to source code">getPropertyInstance</a>( <span>object <var>&amp; $object</var></span>, <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Internal method to get the <code>ReflectionProperty</code> instance</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Internal method to get the <code>ReflectionProperty</code> instance</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$object</var></dt>
+					<dd>Instantiated object that has the property</dd>
+					<dt><var>$name</var></dt>
+					<dd>Property name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					ReflectionProperty
+				</div>
+
+
+				<h4>Used by</h4>
+				<div class="list">
+						Tools\ReflectionTrait::getProperty()<br>
+						Tools\ReflectionTrait::setProperty()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProperty" id="_getProperty">
+
+		<td class="attributes"><code>
+			 protected 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProperty">#</a>
+		<code><a href="source-class-Tools.ReflectionTrait.html#83-93" title="Go to source code">getProperty</a>( <span>object <var>&amp; $object</var></span>, <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Gets a property value</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets a property value</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$object</var></dt>
+					<dd>Instantiated object that has the property</dd>
+					<dt><var>$name</var></dt>
+					<dd>Property name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>Property value
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-Tools.ReflectionTrait.html#_getPropertyInstance">Tools\ReflectionTrait::getPropertyInstance()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="invokeMethod" id="_invokeMethod">
+
+		<td class="attributes"><code>
+			 protected 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_invokeMethod">#</a>
+		<code><a href="source-class-Tools.ReflectionTrait.html#95-106" title="Go to source code">invokeMethod</a>( <span>object <var>&amp; $object</var></span>, <span>string <var>$methodName</var></span>, <span>array <var>$parameters</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Invokes a method</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Invokes a method</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$object</var></dt>
+					<dd>Instantiated object that we will run method on</dd>
+					<dt><var>$methodName</var></dt>
+					<dd>Method name</dd>
+					<dt><var>$parameters</var></dt>
+					<dd>Array of parameters to pass into method</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>Method return
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-Tools.ReflectionTrait.html#_getMethodInstance">Tools\ReflectionTrait::getMethodInstance()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setProperty" id="_setProperty">
+
+		<td class="attributes"><code>
+			 protected 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setProperty">#</a>
+		<code><a href="source-class-Tools.ReflectionTrait.html#108-123" title="Go to source code">setProperty</a>( <span>object <var>&amp; $object</var></span>, <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets a property value</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets a property value</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$object</var></dt>
+					<dd>Instantiated object that has the property</dd>
+					<dt><var>$name</var></dt>
+					<dd>Property name</dd>
+					<dt><var>$value</var></dt>
+					<dd>Value you want to set</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>Old property value
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-Tools.ReflectionTrait.html#_getPropertyInstance">Tools\ReflectionTrait::getPropertyInstance()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		php-tools API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
