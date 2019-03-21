@@ -49,7 +49,6 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Tools.Apache.html" class="deprecated">Apache</a></li>
 				<li class="active"><a href="class-Tools.BodyParser.html">BodyParser</a></li>
 				<li><a href="class-Tools.Entity.html">Entity</a></li>
 				<li><a href="class-Tools.FileArray.html">FileArray</a></li>
@@ -131,7 +130,7 @@
 		<b>Namespace:</b> <a href="namespace-Tools.html">Tools</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Tools.BodyParser.html#19-170" title="Go to source code">BodyParser.php</a>
+			<b>Located at</b> <a href="source-class-Tools.BodyParser.html#19-121" title="Go to source code">BodyParser.php</a>
 		<br>
 	</div>
 
@@ -151,7 +150,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Tools.BodyParser.html#78-93" title="Go to source code">__construct</a>( <span>string|Psr\Http\Message\StreamInterface <var>$body</var></span>, <span>string <var>$url</var></span> )</code>
+		<code><a href="source-class-Tools.BodyParser.html#66-77" title="Go to source code">__construct</a>( <span>string|Psr\Http\Message\StreamInterface <var>$body</var></span>, <span>string <var>$url</var></span> )</code>
 
 		<div class="description short">
 			<p>Constructor</p>
@@ -175,57 +174,6 @@
 				<div class="list">
 						<br>
 						<br>
-						<br>
-						<br>
-				</div>
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="_turnUrlAsAbsolute" id="__turnUrlAsAbsolute">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#__turnUrlAsAbsolute">#</a>
-		<code><a href="source-class-Tools.BodyParser.html#95-120" title="Go to source code">_turnUrlAsAbsolute</a>( <span>string <var>$url</var></span> )</code>
-
-		<div class="description short">
-			<p>Internal method to turn an url as absolute</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Internal method to turn an url as absolute</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$url</var></dt>
-					<dd>Relative url</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					string<br>Absolute url
-				</div>
-
-
-				<h4>Uses</h4>
-				<div class="list">
-						<br>
-						<br>
-						<br>
-				</div>
-				<h4>Used by</h4>
-				<div class="list">
-						Tools\BodyParser::extractLinks()<br>
 				</div>
 
 
@@ -244,7 +192,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_extractLinks">#</a>
-		<code><a href="source-class-Tools.BodyParser.html#122-159" title="Go to source code">extractLinks</a>( )</code>
+		<code><a href="source-class-Tools.BodyParser.html#79-120" title="Go to source code">extractLinks</a>( )</code>
 
 		<div class="description short">
 			<p>Extracs links from body</p>
@@ -263,47 +211,9 @@
 
 				<h4>Uses</h4>
 				<div class="list">
-						<code><a href="class-Tools.BodyParser.html#__turnUrlAsAbsolute">Tools\BodyParser::_turnUrlAsAbsolute()</a></code><br>
 						<br>
 						<br>
 						<br>
-				</div>
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="isHtml" id="_isHtml">
-
-		<td class="attributes"><code>
-			 public 
-
-			boolean
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_isHtml">#</a>
-		<code><a href="source-class-Tools.BodyParser.html#161-169" title="Go to source code">isHtml</a>( )</code>
-
-		<div class="description short">
-			<p>Checks if the body contains HTML code</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Checks if the body contains HTML code</p>
-
-
-
-				<h4>Returns</h4>
-				<div class="list">
-					boolean
-				</div>
-
-
-				<h4>Uses</h4>
-				<div class="list">
 						<br>
 				</div>
 
@@ -346,7 +256,6 @@
 					<div class="list">
 							Tools\BodyParser::__construct()<br>
 							Tools\BodyParser::extractLinks()<br>
-							Tools\BodyParser::isHtml()<br>
 					</div>
 			</div>
 		</td>
@@ -387,66 +296,6 @@
 			</div>
 		</td>
 	</tr>
-	<tr data-order="host" id="$host">
-		<td class="attributes"><code>
-			protected  
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Tools.BodyParser.html#39-43" title="Go to source code"><var>$host</var></a>
-
-			<div class="description short">
-				<p>Host of the reference url</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>Host of the reference url</p>
-
-					<h4>Used by</h4>
-					<div class="list">
-							Tools\BodyParser::__construct()<br>
-							Tools\BodyParser::_turnUrlAsAbsolute()<br>
-					</div>
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$host" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="scheme" id="$scheme">
-		<td class="attributes"><code>
-			protected  
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Tools.BodyParser.html#45-49" title="Go to source code"><var>$scheme</var></a>
-
-			<div class="description short">
-				<p>Scheme of the reference url</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>Scheme of the reference url</p>
-
-					<h4>Used by</h4>
-					<div class="list">
-							Tools\BodyParser::__construct()<br>
-							Tools\BodyParser::_turnUrlAsAbsolute()<br>
-					</div>
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$scheme" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
 	<tr data-order="tags" id="$tags">
 		<td class="attributes"><code>
 			protected  
@@ -454,7 +303,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Tools.BodyParser.html#51-70" title="Go to source code"><var>$tags</var></a>
+				<a href="source-class-Tools.BodyParser.html#39-58" title="Go to source code"><var>$tags</var></a>
 
 			<div class="description short">
 				<p>HTML tags that may contain links and therefore need to be scanned.</p>
@@ -498,7 +347,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Tools.BodyParser.html#72-76" title="Go to source code"><var>$url</var></a>
+				<a href="source-class-Tools.BodyParser.html#60-64" title="Go to source code"><var>$url</var></a>
 
 			<div class="description short">
 				<p>Reference url. Used to determine the relative links</p>
@@ -510,7 +359,7 @@
 					<h4>Used by</h4>
 					<div class="list">
 							Tools\BodyParser::__construct()<br>
-							Tools\BodyParser::_turnUrlAsAbsolute()<br>
+							Tools\BodyParser::extractLinks()<br>
 					</div>
 			</div>
 		</td>
