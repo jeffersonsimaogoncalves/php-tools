@@ -801,7 +801,7 @@
 </span><span id="681" class="l">    <span class="php-keyword1">function</span> url_to_absolute(<span class="php-var">$path</span>, <span class="php-var">$relative</span>)
 </span><span id="682" class="l">    {
 </span><span id="683" class="l">        <span class="php-var">$path</span> = clean_url(<span class="php-var">$path</span>, <span class="php-keyword1">false</span>, <span class="php-keyword1">true</span>);
-</span><span id="684" class="l">        <span class="php-var">$path</span> = <span class="php-keyword2">pathinfo</span>(<span class="php-var">$path</span>, PATHINFO_EXTENSION) ? <span class="php-keyword2">dirname</span>(<span class="php-var">$path</span>) : <span class="php-var">$path</span>;
+</span><span id="684" class="l">        <span class="php-var">$path</span> = <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^(\w+:\/\/.+)\/[^\.\/]+\.[^\.\/]+$/'</span>, <span class="php-var">$path</span>, <span class="php-var">$matches</span>) ? <span class="php-var">$matches</span>[<span class="php-num">1</span>] : <span class="php-var">$path</span>;
 </span><span id="685" class="l">
 </span><span id="686" class="l">        <span class="php-keyword1">return</span> \phpUri::parse(<span class="php-var">$path</span> . <span class="php-quote">'/'</span>)-&gt;<span class="php-keyword2">join</span>(<span class="php-var">$relative</span>);
 </span><span id="687" class="l">    }
