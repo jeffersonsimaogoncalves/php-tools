@@ -130,7 +130,7 @@
 		<b>Namespace:</b> <a href="namespace-Tools.html">Tools</a>\<a href="namespace-Tools.TestSuite.html">TestSuite</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Tools.TestSuite.TestTrait.html#20-257" title="Go to source code">TestSuite/TestTrait.php</a>
+			<b>Located at</b> <a href="source-class-Tools.TestSuite.TestTrait.html#20-273" title="Go to source code">TestSuite/TestTrait.php</a>
 		<br>
 	</div>
 
@@ -150,7 +150,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___call">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#38-51" title="Go to source code">__call</a>( <span>string <var>$name</var></span>, <span>mixed <var>$arguments</var></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#38-51" title="Go to source code">__call</a>( <span>string <var>$name</var></span>, <span>array <var>$arguments</var></span> )</code>
 
 		<div class="description short">
 			<p>Magic <code>__call()</code> method.</p>
@@ -197,7 +197,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___callStatic">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#53-91" title="Go to source code">__callStatic</a>( <span>string <var>$name</var></span>, <span>mixed <var>$arguments</var></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#53-96" title="Go to source code">__callStatic</a>( <span>string <var>$name</var></span>, <span>array <var>$arguments</var></span> )</code>
 
 		<div class="description short">
 			<p>Magic <code>__callStatic()</code> method.</p>
@@ -220,7 +220,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					BadMethodCallException
+					Tools\Exception\BadMethodCallException
 				</div>
 
 				<h4>Since</h4>
@@ -244,7 +244,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertArrayKeysEqual">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#93-107" title="Go to source code">assertArrayKeysEqual</a>( <span>array <var>$expectedKeys</var></span>, <span>array <var>$array</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#98-112" title="Go to source code">assertArrayKeysEqual</a>( <span>array <var>$expectedKeys</var></span>, <span>array <var>$array</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that the array keys are equal to <code>$expectedKeys</code></p>
@@ -284,7 +284,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertException">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#109-137" title="Go to source code">assertException</a>( <span>string <var>$expectedException</var></span>, <span>callable <var>$function</var></span>, <span>string|null <var>$expectedMessage</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#114-153" title="Go to source code">assertException</a>( <span>string <var>$expectedException</var></span>, <span>callable <var>$function</var></span>, <span>string|null <var>$expectedMessage</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that a callable throws an exception</p>
@@ -328,7 +328,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertFileExtension">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#139-157" title="Go to source code">assertFileExtension</a>( <span>string|array <var>$expectedExtension</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#155-173" title="Go to source code">assertFileExtension</a>( <span>string|array <var>$expectedExtension</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that a filename has the <code>$expectedExtension</code>.</p>
@@ -373,7 +373,7 @@ The assertion is case-insensitive (eg, for <code>PIC.JPG</code>, the expected ex
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertFileMime">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#159-174" title="Go to source code">assertFileMime</a>( <span>string|array <var>$expectedMime</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#175-190" title="Go to source code">assertFileMime</a>( <span>string|array <var>$expectedMime</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that a filename have a MIME content type.</p>
@@ -415,7 +415,7 @@ The assertion is case-insensitive (eg, for <code>PIC.JPG</code>, the expected ex
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertFilePerms">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#176-195" title="Go to source code">assertFilePerms</a>( <span>string|integer|array <var>$expectedPerms</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#192-211" title="Go to source code">assertFilePerms</a>( <span>string|integer|array <var>$expectedPerms</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that a filename has some file permissions.</p>
@@ -462,7 +462,7 @@ The assertion is case-insensitive (eg, for <code>PIC.JPG</code>, the expected ex
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertImageSize">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#197-212" title="Go to source code">assertImageSize</a>( <span>integer|string <var>$expectedWidth</var></span>, <span>integer|string <var>$expectedHeight</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#213-228" title="Go to source code">assertImageSize</a>( <span>integer|string <var>$expectedWidth</var></span>, <span>integer|string <var>$expectedHeight</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that an image file has <code>$expectedWidth</code> and <code>$expectedHeight</code></p>
@@ -504,7 +504,7 @@ The assertion is case-insensitive (eg, for <code>PIC.JPG</code>, the expected ex
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertIsArrayNotEmpty">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#214-226" title="Go to source code">assertIsArrayNotEmpty</a>( <span>mixed <var>$var</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#230-242" title="Go to source code">assertIsArrayNotEmpty</a>( <span>mixed <var>$var</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that <code>$var</code> is an array and is not empty</p>
@@ -546,7 +546,7 @@ The assertion is case-insensitive (eg, for <code>PIC.JPG</code>, the expected ex
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertObjectPropertiesEqual">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#228-240" title="Go to source code">assertObjectPropertiesEqual</a>( <span>array <var>$expectedProperties</var></span>, <span>object <var>$object</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#244-256" title="Go to source code">assertObjectPropertiesEqual</a>( <span>array <var>$expectedProperties</var></span>, <span>object <var>$object</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that the object properties are equal to <code>$expectedProperties</code></p>
@@ -586,7 +586,7 @@ The assertion is case-insensitive (eg, for <code>PIC.JPG</code>, the expected ex
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertSameMethods">#</a>
-		<code><a href="source-class-Tools.TestSuite.TestTrait.html#242-256" title="Go to source code">assertSameMethods</a>( <span>mixed <var>$firstClass</var></span>, <span>mixed <var>$secondClass</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Tools.TestSuite.TestTrait.html#258-272" title="Go to source code">assertSameMethods</a>( <span>mixed <var>$firstClass</var></span>, <span>mixed <var>$secondClass</var></span>, <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that <code>$firstClass</code> and <code>$secondClass</code> have the same methods</p>

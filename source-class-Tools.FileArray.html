@@ -68,6 +68,7 @@
 				<li><a href="class-Tools.Exception.FileNotExistsException.html">Tools\Exception\FileNotExistsException</a></li>
 				<li><a href="class-Tools.Exception.KeyNotExistsException.html">Tools\Exception\KeyNotExistsException</a></li>
 				<li><a href="class-Tools.Exception.NotDirectoryException.html">Tools\Exception\NotDirectoryException</a></li>
+				<li><a href="class-Tools.Exception.NotPositiveException.html">Tools\Exception\NotPositiveException</a></li>
 				<li><a href="class-Tools.Exception.NotReadableException.html">Tools\Exception\NotReadableException</a></li>
 				<li><a href="class-Tools.Exception.NotWritableException.html">Tools\Exception\NotWritableException</a></li>
 				<li><a href="class-Tools.Exception.PropertyNotExistsException.html">Tools\Exception\PropertyNotExistsException</a></li>
@@ -156,7 +157,7 @@
 </span></span><span id="36" class="l"><span class="php-comment">     *  parameter.
 </span></span><span id="37" class="l"><span class="php-comment">     * @param string $filename Filename
 </span></span><span id="38" class="l"><span class="php-comment">     * @param array $data Optional initial data
-</span></span><span id="39" class="l"><span class="php-comment">     * @throws NotWritableException
+</span></span><span id="39" class="l"><span class="php-comment">     * @throws \Tools\Exception\NotWritableException
 </span></span><span id="40" class="l"><span class="php-comment">     * @uses read()
 </span></span><span id="41" class="l"><span class="php-comment">     * @uses $data
 </span></span><span id="42" class="l"><span class="php-comment">     * @uses $filename
@@ -188,7 +189,7 @@
 </span></span><span id="68" class="l"><span class="php-comment">     * Note that the keys will be re-ordered.
 </span></span><span id="69" class="l"><span class="php-comment">     * @param int $key Key number
 </span></span><span id="70" class="l"><span class="php-comment">     * @return $this
-</span></span><span id="71" class="l"><span class="php-comment">     * @throws KeyNotExistsException
+</span></span><span id="71" class="l"><span class="php-comment">     * @throws \Tools\Exception\KeyNotExistsException
 </span></span><span id="72" class="l"><span class="php-comment">     * @uses $data
 </span></span><span id="73" class="l"><span class="php-comment">     */</span>
 </span><span id="74" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">delete</span>(<span class="php-var">$key</span>)
@@ -215,7 +216,7 @@
 </span></span><span id="95" class="l"><span class="php-comment">     * Gets a value from its key number
 </span></span><span id="96" class="l"><span class="php-comment">     * @param int $key Key number
 </span></span><span id="97" class="l"><span class="php-comment">     * @return mixed
-</span></span><span id="98" class="l"><span class="php-comment">     * @throws KeyNotExistsException
+</span></span><span id="98" class="l"><span class="php-comment">     * @throws \Tools\Exception\KeyNotExistsException
 </span></span><span id="99" class="l"><span class="php-comment">     * @uses $data
 </span></span><span id="100" class="l"><span class="php-comment">     */</span>
 </span><span id="101" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get(<span class="php-var">$key</span>)
@@ -294,7 +295,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?dbb5e1beab6852c5c079a04e11ff61ac6b499af9"></script>
-<script src="elementlist.js?78199e1c866e6a0dbc8163ca55b3c42c412b8c09"></script>
+<script src="resources/combined.js?333b22e3fb9d4967defc53a314a9392daabfa30f"></script>
+<script src="elementlist.js?85e04a34561e713780a4630c84554f286a9ea8f1"></script>
 </body>
 </html>
