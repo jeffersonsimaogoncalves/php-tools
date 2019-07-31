@@ -175,7 +175,7 @@
 </span></span><span id="53" class="l"><span class="php-comment">     */</span>
 </span><span id="54" class="l">    <span class="php-keyword1">function</span> in_array_or_fail(<span class="php-var">$value</span>, <span class="php-var">$array</span>, <span class="php-var">$message</span> = <span class="php-quote">'The value is not in array'</span>, <span class="php-var">$exception</span> = NotInArrayException::<span class="php-keyword1">class</span>)
 </span><span id="55" class="l">    {
-</span><span id="56" class="l">        <span class="php-keyword1">if</span> (can_be_string(<span class="php-var">$value</span>) &amp;&amp; <span class="php-var">$message</span> == <span class="php-quote">'The value is not in array'</span>) {
+</span><span id="56" class="l">        <span class="php-keyword1">if</span> (is_stringable(<span class="php-var">$value</span>) &amp;&amp; <span class="php-var">$message</span> == <span class="php-quote">'The value is not in array'</span>) {
 </span><span id="57" class="l">            <span class="php-var">$message</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'The value `%s` is not in array'</span>, (string)<span class="php-var">$value</span>);
 </span><span id="58" class="l">        }
 </span><span id="59" class="l">        is_true_or_fail(<span class="php-keyword2">in_array</span>(<span class="php-var">$value</span>, <span class="php-var">$array</span>), <span class="php-var">$message</span>, <span class="php-var">$exception</span>);
@@ -212,7 +212,7 @@
 </span></span><span id="90" class="l"><span class="php-comment">     */</span>
 </span><span id="91" class="l">    <span class="php-keyword1">function</span> is_positive_or_fail(<span class="php-var">$value</span>, <span class="php-var">$message</span> = <span class="php-quote">'The value is not a positive'</span>, <span class="php-var">$exception</span> = NotPositiveException::<span class="php-keyword1">class</span>)
 </span><span id="92" class="l">    {
-</span><span id="93" class="l">        <span class="php-keyword1">if</span> (can_be_string(<span class="php-var">$value</span>) &amp;&amp; <span class="php-var">$message</span> == <span class="php-quote">'The value is not a positive'</span>) {
+</span><span id="93" class="l">        <span class="php-keyword1">if</span> (is_stringable(<span class="php-var">$value</span>) &amp;&amp; <span class="php-var">$message</span> == <span class="php-quote">'The value is not a positive'</span>) {
 </span><span id="94" class="l">            <span class="php-var">$message</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'The value `%s` is not a positive'</span>, (string)<span class="php-var">$value</span>);
 </span><span id="95" class="l">        }
 </span><span id="96" class="l">        is_true_or_fail(is_positive(<span class="php-var">$value</span>), <span class="php-var">$message</span>, <span class="php-var">$exception</span>);
@@ -347,6 +347,6 @@
 </div>
 </div>
 <script src="resources/combined.js?333b22e3fb9d4967defc53a314a9392daabfa30f"></script>
-<script src="elementlist.js?7c23d6801afa3bc3ad4ce55b0f155a50c150596d"></script>
+<script src="elementlist.js?fa059f31a682afd360cb9e017fed5db0eb476770"></script>
 </body>
 </html>
