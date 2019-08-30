@@ -144,7 +144,7 @@ Exception
 		<b>Namespace:</b> <a href="namespace-Tools.html">Tools</a>\<a href="namespace-Tools.Exception.html">Exception</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Tools.Exception.KeyNotExistsException.html#18-33" title="Go to source code">Exception/KeyNotExistsException.php</a>
+			<b>Located at</b> <a href="source-class-Tools.Exception.KeyNotExistsException.html#18-58" title="Go to source code">Exception/KeyNotExistsException.php</a>
 		<br>
 	</div>
 
@@ -164,7 +164,7 @@ Exception
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Tools.Exception.KeyNotExistsException.html#23-32" title="Go to source code">__construct</a>( <span>string <var>$message</var> = <span class="php-quote">'Array key does not exist'</span></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Throwable <var>$previous</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Tools.Exception.KeyNotExistsException.html#28-46" title="Go to source code">__construct</a>( <span>string|null <var>$message</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Throwable <var>$previous</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$key</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Constructor</p>
@@ -182,13 +182,61 @@ Exception
 					<dd>The code of the error</dd>
 					<dt><var>$previous</var></dt>
 					<dd>the previous exception</dd>
+					<dt><var>$key</var></dt>
+					<dd>Name of the key that do not exist</dd>
 				</dl></div>
 
 
 
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
 
 				<h4>Overrides</h4>
 				<div class="list"><code>Exception::__construct()</code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getKeyName" id="_getKeyName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getKeyName">#</a>
+		<code><a href="source-class-Tools.Exception.KeyNotExistsException.html#48-57" title="Go to source code">getKeyName</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the name of the key that do not exist</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the name of the key that do not exist</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.2.11<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
 
 		</div>
 		</div></td>
@@ -222,6 +270,39 @@ getTraceAsString()
 
 
 
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="key" id="$key">
+		<td class="attributes"><code>
+			protected  
+			string|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.Exception.KeyNotExistsException.html#23-26" title="Go to source code"><var>$key</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\Exception\KeyNotExistsException::__construct()<br>
+							Tools\Exception\KeyNotExistsException::getKeyName()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$key" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
 
 	<table class="summary inherited">
 	<caption>Properties inherited from Exception</caption>

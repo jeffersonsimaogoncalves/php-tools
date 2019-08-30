@@ -144,7 +144,7 @@ Exception
 		<b>Namespace:</b> <a href="namespace-Tools.html">Tools</a>\<a href="namespace-Tools.Exception.html">Exception</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Tools.Exception.NotDirectoryException.html#19-34" title="Go to source code">Exception/NotDirectoryException.php</a>
+			<b>Located at</b> <a href="source-class-Tools.Exception.NotDirectoryException.html#19-59" title="Go to source code">Exception/NotDirectoryException.php</a>
 		<br>
 	</div>
 
@@ -164,7 +164,7 @@ Exception
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Tools.Exception.NotDirectoryException.html#24-33" title="Go to source code">__construct</a>( <span>string <var>$message</var> = <span class="php-quote">'Filename is not a directory'</span></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Throwable <var>$previous</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Tools.Exception.NotDirectoryException.html#29-47" title="Go to source code">__construct</a>( <span>string|null <var>$message</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Throwable <var>$previous</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Constructor</p>
@@ -182,13 +182,61 @@ Exception
 					<dd>The code of the error</dd>
 					<dt><var>$previous</var></dt>
 					<dd>the previous exception</dd>
+					<dt><var>$path</var></dt>
+					<dd>Path of filename that is not a directory</dd>
 				</dl></div>
 
 
 
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
 
 				<h4>Overrides</h4>
 				<div class="list"><code>Exception::__construct()</code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFilePath" id="_getFilePath">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFilePath">#</a>
+		<code><a href="source-class-Tools.Exception.NotDirectoryException.html#49-58" title="Go to source code">getFilePath</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the path of filename that is not a directory</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the path of filename that is not a directory</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.2.11<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
 
 		</div>
 		</div></td>
@@ -222,6 +270,39 @@ getTraceAsString()
 
 
 
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="path" id="$path">
+		<td class="attributes"><code>
+			protected  
+			string|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Tools.Exception.NotDirectoryException.html#24-27" title="Go to source code"><var>$path</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+					<h4>Used by</h4>
+					<div class="list">
+							Tools\Exception\NotDirectoryException::__construct()<br>
+							Tools\Exception\NotDirectoryException::getFilePath()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$path" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
 
 	<table class="summary inherited">
 	<caption>Properties inherited from Exception</caption>
