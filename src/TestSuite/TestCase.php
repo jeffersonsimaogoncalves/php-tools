@@ -11,10 +11,10 @@
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  * @since       1.1.11
  */
-namespace Tools\TestSuite;
+namespace JeffersonSimaoGoncalves\Tools\TestSuite;
 
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
-use Tools\ReflectionTrait;
+use JeffersonSimaoGoncalves\Tools\ReflectionTrait;
 
 /**
  * TestCase class

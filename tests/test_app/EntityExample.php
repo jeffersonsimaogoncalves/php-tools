@@ -12,7 +12,7 @@
  */
 namespace App;
 
-use Tools\Entity;
+use JeffersonSimaoGoncalves\Tools\Entity;
 
 /**
  * An example of entity

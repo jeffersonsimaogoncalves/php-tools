@@ -11,7 +11,7 @@
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  * @since       1.0.2
  */
-namespace Tools\TestSuite;
+namespace JeffersonSimaoGoncalves\Tools\TestSuite;
 
 use BadMethodCallException;
 use Exception;
@@ -58,7 +58,7 @@ trait TestTrait
      * @param array $arguments Arguments
      * @return void
      * @since 1.1.12
-     * @throws \Tools\Exception\BadMethodCallException
+     * @throws \JeffersonSimaoGoncalves\Tools\Exception\BadMethodCallException
      */
     public static function __callStatic($name, array $arguments)
     {

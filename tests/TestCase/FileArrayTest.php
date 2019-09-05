@@ -10,12 +10,12 @@
  * @link        https://github.com/mirko-pagliai/php-tools
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
-namespace Tools\Test;
+namespace JeffersonSimaoGoncalves\Tools\Test;
 
-use Tools\Exception\KeyNotExistsException;
-use Tools\Exception\NotWritableException;
-use Tools\FileArray;
-use Tools\TestSuite\TestCase;
+use JeffersonSimaoGoncalves\Tools\Exception\KeyNotExistsException;
+use JeffersonSimaoGoncalves\Tools\Exception\NotWritableException;
+use JeffersonSimaoGoncalves\Tools\FileArray;
+use JeffersonSimaoGoncalves\Tools\TestSuite\TestCase;
 
 /**
  * FileArrayTest class

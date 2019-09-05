@@ -11,10 +11,10 @@
  * @link        https://github.com/mirko-pagliai/php-tools
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
-namespace Tools\Test\Exception;
+namespace JeffersonSimaoGoncalves\Tools\Test\Exception;
 
-use Tools\Exception\KeyNotExistsException;
-use Tools\TestSuite\TestCase;
+use JeffersonSimaoGoncalves\Tools\Exception\KeyNotExistsException;
+use JeffersonSimaoGoncalves\Tools\TestSuite\TestCase;
 
 /**
  * KeyNotExistsExceptionTest class

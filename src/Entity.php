@@ -11,7 +11,7 @@
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  * @since       1.1.15
  */
-namespace Tools;
+namespace JeffersonSimaoGoncalves\Tools;
 
 use ArrayAccess;
 

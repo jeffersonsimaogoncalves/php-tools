@@ -10,11 +10,11 @@
  * @link        https://github.com/mirko-pagliai/php-tools
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
-namespace Tools\Test;
+namespace JeffersonSimaoGoncalves\Tools\Test;
 
 use App\EntityExample;
-use Tools\Entity;
-use Tools\TestSuite\TestCase;
+use JeffersonSimaoGoncalves\Tools\Entity;
+use JeffersonSimaoGoncalves\Tools\TestSuite\TestCase;
 
 /**
  * EntityTest class

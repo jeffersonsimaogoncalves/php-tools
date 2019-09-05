@@ -10,7 +10,7 @@
  * @link        https://github.com/mirko-pagliai/php-tools
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
-namespace Tools\Test;
+namespace JeffersonSimaoGoncalves\Tools\Test;
 
 use App\ExampleChildClass;
 use App\ExampleClass;
@@ -19,7 +19,7 @@ use App\ExampleOfTraversable;
 use BadMethodCallException;
 use PHPUnit\Framework\Error\Deprecated;
 use stdClass;
-use Tools\TestSuite\TestCase;
+use JeffersonSimaoGoncalves\Tools\TestSuite\TestCase;
 
 /**
  * GlobalFunctionsTest class

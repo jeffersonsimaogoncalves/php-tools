@@ -11,7 +11,7 @@
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  * @since       1.1.3
  */
-namespace Tools;
+namespace JeffersonSimaoGoncalves\Tools;
 
 use Psr\Http\Message\StreamInterface;
 use Symfony\Component\DomCrawler\Crawler;

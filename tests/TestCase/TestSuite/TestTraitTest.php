@@ -10,7 +10,7 @@
  * @link        https://github.com/mirko-pagliai/cakephp-thumber
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
-namespace Tools\Test\TestSuite;
+namespace JeffersonSimaoGoncalves\Tools\Test\TestSuite;
 
 use App\AnotherExampleChildClass;
 use App\ExampleChildClass;
@@ -21,7 +21,7 @@ use Exception;
 use PHPUnit\Framework\AssertionFailedError;
 use PHPUnit\Framework\Error\Deprecated;
 use stdClass;
-use Tools\TestSuite\TestCase;
+use JeffersonSimaoGoncalves\Tools\TestSuite\TestCase;
 
 /**
  * TestTraitTest class

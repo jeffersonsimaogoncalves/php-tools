@@ -11,7 +11,7 @@
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  * @since       1.0.10
  */
-namespace Tools;
+namespace JeffersonSimaoGoncalves\Tools;
 
 /**
  * This class allows you to read and write arrays using text files
@@ -36,7 +36,7 @@ class FileArray
      *  parameter.
      * @param string $filename Filename
      * @param array $data Optional initial data
-     * @throws \Tools\Exception\NotWritableException
+     * @throws \JeffersonSimaoGoncalves\Tools\Exception\NotWritableException
      * @uses read()
      * @uses $data
      * @uses $filename
@@ -68,7 +68,7 @@ class FileArray
      * Note that the keys will be re-ordered.
      * @param int $key Key number
      * @return $this
-     * @throws \Tools\Exception\KeyNotExistsException
+     * @throws \JeffersonSimaoGoncalves\Tools\Exception\KeyNotExistsException
      * @uses $data
      */
     public function delete($key)
@@ -95,7 +95,7 @@ class FileArray
      * Gets a value from its key number
      * @param int $key Key number
      * @return mixed
-     * @throws \Tools\Exception\KeyNotExistsException
+     * @throws \JeffersonSimaoGoncalves\Tools\Exception\KeyNotExistsException
      * @uses $data
      */
     public function get($key)

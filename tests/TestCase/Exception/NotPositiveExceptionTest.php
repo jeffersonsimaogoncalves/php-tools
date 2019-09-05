@@ -11,10 +11,10 @@
  * @link        https://github.com/mirko-pagliai/php-tools
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
-namespace Tools\Test\Exception;
+namespace JeffersonSimaoGoncalves\Tools\Test\Exception;
 
-use Tools\Exception\NotPositiveException;
-use Tools\TestSuite\TestCase;
+use JeffersonSimaoGoncalves\Tools\Exception\NotPositiveException;
+use JeffersonSimaoGoncalves\Tools\TestSuite\TestCase;
 
 /**
  * NotPositiveExceptionTest class

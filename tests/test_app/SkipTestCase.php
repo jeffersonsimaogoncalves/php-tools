@@ -12,7 +12,7 @@
  */
 namespace App;
 
-use Tools\TestSuite\TestCase;
+use JeffersonSimaoGoncalves\Tools\TestSuite\TestCase;
 
 class SkipTestCase extends TestCase
 {

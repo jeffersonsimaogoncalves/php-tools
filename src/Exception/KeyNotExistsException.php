@@ -11,7 +11,7 @@
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  * @since       1.1.10
  */
-namespace Tools\Exception;
+namespace JeffersonSimaoGoncalves\Tools\Exception;
 
 use Exception;
 

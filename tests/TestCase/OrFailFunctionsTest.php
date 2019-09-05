@@ -10,22 +10,22 @@
  * @link        https://github.com/mirko-pagliai/php-tools
  * @license     https://opensource.org/licenses/mit-license.php MIT License
  */
-namespace Tools\Test;
+namespace JeffersonSimaoGoncalves\Tools\Test;
 
 use App\ExampleClass;
 use ErrorException;
 use Exception;
 use RuntimeException;
 use stdClass;
-use Tools\Exception\FileNotExistsException;
-use Tools\Exception\KeyNotExistsException;
-use Tools\Exception\NotDirectoryException;
-use Tools\Exception\NotInArrayException;
-use Tools\Exception\NotPositiveException;
-use Tools\Exception\NotReadableException;
-use Tools\Exception\NotWritableException;
-use Tools\Exception\PropertyNotExistsException;
-use Tools\TestSuite\TestCase;
+use JeffersonSimaoGoncalves\Tools\Exception\FileNotExistsException;
+use JeffersonSimaoGoncalves\Tools\Exception\KeyNotExistsException;
+use JeffersonSimaoGoncalves\Tools\Exception\NotDirectoryException;
+use JeffersonSimaoGoncalves\Tools\Exception\NotInArrayException;
+use JeffersonSimaoGoncalves\Tools\Exception\NotPositiveException;
+use JeffersonSimaoGoncalves\Tools\Exception\NotReadableException;
+use JeffersonSimaoGoncalves\Tools\Exception\NotWritableException;
+use JeffersonSimaoGoncalves\Tools\Exception\PropertyNotExistsException;
+use JeffersonSimaoGoncalves\Tools\TestSuite\TestCase;
 
 /**
  * OrFailFunctionsTest class
